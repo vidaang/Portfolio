@@ -157,3 +157,38 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const projectTiles = document.querySelectorAll(".project-item");
+  const closeModalButton = document.getElementById("closeModalButton");
+
+  projectTiles.forEach(function (tile) {
+    tile.addEventListener("click", function () {
+      const projectId = tile.getAttribute("data-project-id");
+      openProjectModal(projectId);
+    });
+  });
+
+  document.addEventListener("click", function (event) {
+    if (event.target.classList.contains("project-modal-container") ||
+        event.target.id === "closeModalButton") {
+      closeModal();
+    }
+  });
+
+  // Function to open the project modal based on the project ID
+  function openProjectModal(projectId) {
+    const modal = document.getElementById(projectId);
+    modal.style.display = "block";
+  }
+
+  // Function to close all project modals
+  function closeModal() {
+    const projectModals = document.querySelectorAll(".project-modal-container");
+    projectModals.forEach(function (modal) {
+      modal.style.display = "none";
+    });
+  }
+});

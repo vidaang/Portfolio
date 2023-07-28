@@ -33,22 +33,20 @@
 
   <main>
 
-    <!--
-      - #SIDEBAR
-    -->
+    <!--- #SIDEBAR --------------------------------------------------------------------------------------->
 
     <aside class="sidebar" data-sidebar>
 
       <div class="sidebar-info">
 
         <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="80">
+          <img class="portfolio-img" src="./assets/images/portfolio.jpeg" alt="Vi Dang" width="80">
         </figure>
 
         <div class="info-content">
-          <h1 class="name" title="Richard hanrick">Richard hanrick</h1>
+          <h1 class="name" title="Vi Dang">Vi Dang</h1>
 
-          <p class="title">Web developer</p>
+          <p class="title">Undergraduate Computer Science</p>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
@@ -64,7 +62,7 @@
         <div class="separator"></div>
 
         <ul class="contacts-list">
-
+          
           <li class="contact-item">
 
             <div class="icon-box">
@@ -74,7 +72,7 @@
             <div class="contact-info">
               <p class="contact-title">Email</p>
 
-              <a href="mailto:richard@example.com" class="contact-link">richard@example.com</a>
+              <a href="mailto:vidang@knights.ucf.edu" class="contact-link">vidang@knights.ucf.edu</a>
             </div>
 
           </li>
@@ -86,9 +84,9 @@
             </div>
 
             <div class="contact-info">
-              <p class="contact-title">Phone</p>
+              <p class="contact-title">LinkedIn</p>
 
-              <a href="tel:+12133522795" class="contact-link">+1 (213) 352-2795</a>
+              <a href="https://www.linkedin.com/in/vidaang/" class="contact-link">vidaang</a>
             </div>
 
           </li>
@@ -100,49 +98,11 @@
             </div>
 
             <div class="contact-info">
-              <p class="contact-title">Birthday</p>
+              <p class="contact-title">Github</p>
 
-              <time datetime="1982-06-23">June 23, 1982</time>
+              <a href="https://github.com/vidaang" class="contact-link">vidaang</a>
             </div>
 
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Sacramento, California, USA</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
           </li>
 
         </ul>
@@ -161,9 +121,7 @@
 
     <div class="main-content">
 
-      <!--
-        - #NAVBAR
-      -->
+      <!--- #NAVBAR ------------------------------------------------------------------------------------>
 
       <nav class="navbar">
 
@@ -182,10 +140,6 @@
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
-          </li>
-
-          <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Contact</button>
           </li>
 
@@ -197,11 +151,9 @@
 
 
 
-      <!--
-        - #ABOUT
-      -->
+      <!--- #ABOUT ---------------------------------------------------------------------------------------------------------------------------------------->
 
-      <article class="about  active" data-page="about">
+      <article id="about" class="about  active" data-page="about">
 
         <header>
           <h2 class="h2 article-title">About me</h2>
@@ -209,17 +161,14 @@
 
         <section class="about-text">
           <p>
-            I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media.
-            I enjoy
-            turning complex problems into simple, beautiful and intuitive designs.
+            Hello! My name is Vi (pronounced Vee). I am an undergraduate student at the University of Central Florida.
+            I am majoring in Computer Science and minoring in Financial Technology. My interests are data science, artificial intelligence, and
+            app development. 
           </p>
 
           <p>
-            My job is to build your website so that it is functional and user-friendly but at the same time attractive.
-            Moreover, I
-            add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
-            across your
-            message and identity in the most creative way. I created web design for many famous brand companies.
+            Through my learning and research experience I have developed a deep understanding of algorithms, data structures, 
+            and real world implementation of software engineering. I hope to continue expanding my knowledge as I continue on this journey!
           </p>
         </section>
 
@@ -237,15 +186,31 @@
             <li class="service-item">
 
               <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Mobile apps</h4>
+
+                <p class="service-item-text">
+                  Professional development of applications for iOS and Android.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
                 <img src="./assets/images/icon-design.svg
                 " alt="design icon" width="40">
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web design</h4>
+                <h4 class="h4 service-item-title">ML/AI</h4>
 
                 <p class="service-item-text">
-                  The most modern and high-quality design made at a professional level.
+                  Research and implement optimal machine learning models.
                 </p>
               </div>
 
@@ -267,38 +232,6 @@
 
             </li>
 
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Mobile apps</h4>
-
-                <p class="service-item-text">
-                  Professional development of applications for iOS and Android.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Photography</h4>
-
-                <p class="service-item-text">
-                  I make high-quality photos of any category at a professional level.
-                </p>
-              </div>
-
-            </li>
-
           </ul>
 
         </section>
@@ -308,7 +241,7 @@
           - testimonials
         -->
 
-        <section class="testimonials">
+        <!-- <section class="testimonials">
 
           <h3 class="h3 testimonials-title">Testimonials</h3>
 
@@ -404,7 +337,7 @@
 
           </ul>
 
-        </section>
+        </section> -->
 
 
         <!--
@@ -451,68 +384,15 @@
 
         </div>
 
-
-        <!--
-          - clients
-        -->
-
-        <section class="clients">
-
-          <h3 class="h3 clients-title">Clients</h3>
-
-          <ul class="clients-list has-scrollbar">
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-1-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-2-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-3-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-4-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-5-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-6-color.png" alt="client logo">
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
       </article>
 
 
 
 
 
-      <!--
-        - #RESUME
-      -->
+      <!--- #RESUME ------------------------------------------------------------------------------------------------------>
 
-      <article class="resume" data-page="resume">
+      <article id="resume"class=" resume" data-page="resume">
 
         <header>
           <h2 class="h2 article-title">Resume</h2>
@@ -532,42 +412,32 @@
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">University school of the arts</h4>
+              <h4 class="h4 timeline-item-title">University of Central Florida</h4>
 
-              <span>2007 — 2008</span>
-
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">New york academy of art</h4>
-
-              <span>2006 — 2007</span>
+              <span>August 2021 - Spring 2025</span>
 
               <p class="timeline-text">
-                Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est
-                omnis..
+                Bachelor of Computer Science, B.S.   |   Minor in Financial Technology
               </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">High school of art and design</h4>
-
-              <span>2002 — 2004</span>
 
               <p class="timeline-text">
-                Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur
-                magni dolores
-                eos.
+                
               </p>
+
+              <p class="timeline-text">
+                GPA: 3.82/4.0
+              </p>
+
+              <p class="timeline-text">
+                Relevant Coursework: 
+                Computer Science I & II (Algorithms and Data Structures), 
+                Processes for Object-Oriented Software Development, 
+                Web & User Experience (UX), 
+                Systems Software, 
+                Discrete Structures
+              </p>
+              
+
 
             </li>
 
@@ -589,42 +459,22 @@
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Creative director</h4>
+              <h4 class="h4 timeline-item-title">Undergraduate Research Assistant</h4>
 
-              <span>2015 — Present</span>
+              <span>May 2023 — Present</span>
 
               <p class="timeline-text">
-                Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas
-                molestias
-                exceptur.
+                - Developed innovative applications to enhance the quality of life for elderly and impaired individuals.
               </p>
 
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Art director</h4>
-
-              <span>2013 — 2015</span>
-
               <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
+                - Collaborated effectively within multidisciplinary teams of 4-6 researchers to design, develop, 
+                and implement user-friendly applications based on Adafruit Feather Sense device utilized in the lab.
               </p>
 
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Web designer</h4>
-
-              <span>2010 — 2013</span>
-
               <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
+                - Demonstrated strong problem-solving skills to troubleshoot and resolve software issues when integrating 
+                the hardware and software technologies.
               </p>
 
             </li>
@@ -635,61 +485,130 @@
 
         <section class="skill">
 
-          <h3 class="h3 skills-title">My skills</h3>
+          <h3 class="h3 skills-title">Skills</h3>
 
           <ul class="skills-list content-card">
 
-            <li class="skills-item">
+            <h4 class="h4 skills-item-title">Languages</h4>
 
-              <div class="title-wrapper">
-                <h5 class="h5">Web design</h5>
-                <data value="80">80%</data>
+            <div class="skill-container">
+
+              <div class="skill-button">
+                <img class="skill-img" src="assets\images\java.png">
+                <text class="skill-text">Java</text>
               </div>
 
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
+              <div class="skill-button">
+                <img class="skill-img" src="assets\images\javascript.png">
+                <text class="skill-text">Javascript</text>
               </div>
 
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Graphic design</h5>
-                <data value="70">70%</data>
+              <div class="skill-button">
+                <img class="skill-img" src="assets\images\python.png">
+                <text class="skill-text">Python</text>
               </div>
 
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
+              <div class="skill-button">
+                <img class="skill-img" src="assets\images\html.png">
+                <text class="skill-text">HTML</text>
               </div>
 
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Branding</h5>
-                <data value="90">90%</data>
+              <div class="skill-button">
+                <img class="skill-img" src="assets\images\css.png">
+                <text class="skill-text">CSS</text>
               </div>
 
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
+              <div class="skill-button">
+                <img class="skill-img" src="assets\images\c.png">
+                <text class="skill-text">C</text>
               </div>
 
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">WordPress</h5>
-                <data value="50">50%</data>
+              <div class="skill-button">
+                <img class="skill-img" src="assets\images\c-sharp.png">
+                <text class="skill-text">C#</text>
               </div>
 
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
+            </div>
+
+          </ul>
+
+          <ul class="skills-list content-card">
+
+            <h4 class="h4 skills-item-title">Frameworks</h4>
+
+            <div class="skill-container">
+
+              <div class="skill-button">
+                <img class="skill-img" src="assets\images\react-native.png">
+                <text class="skill-text">React Native</text>
               </div>
 
-            </li>
+              <div class="skill-button">
+                <img class="skill-img" src="assets\images\nodejs.png">
+                <text class="skill-text">Node.js</text>
+              </div>
+
+            </div>
+
+          </ul>
+
+          <ul class="skills-list content-card">
+
+            <h4 class="h4 skills-item-title">Technologies</h4>
+
+            <div class="skill-container">
+
+              <div class="skill-button">
+                <img class="skill-img" src="assets\images\github.png">
+                <text class="skill-text">Github</text>
+              </div>
+
+              <div class="skill-button">
+                <img class="skill-img" src="assets\images\arduino.png">
+                <text class="skill-text">Arduino</text>
+              </div>
+
+              <div class="skill-button">
+                <img class="skill-img" src="assets\images\figma.png">
+                <text class="skill-text">Figma</text>
+              </div>
+
+              <div class="skill-button">
+                <img class="skill-img" src="assets\images\expo.png">
+                <text class="skill-text">Expo</text>
+              </div>
+
+              <div class="skill-button">
+                <img class="skill-img" src="assets\images\glitch.png">
+                <text class="skill-text">Glitch</text>
+              </div>
+
+              <div class="skill-button">
+                <img class="skill-img" src="assets\images\vs-code.png">
+                <text class="skill-text">VS Code</text>
+              </div>
+
+            </div>
+
+          </ul>
+
+          <ul class="skills-list content-card">
+
+            <h4 class="h4 skills-item-title">Operating Systems</h4>
+
+            <div class="skill-container">
+
+              <div class="skill-button">
+                <img class="skill-img" src="assets\images\windows.png">
+                <text class="skill-text">Windows</text>
+              </div>
+
+              <div class="skill-button">
+                <img class="skill-img" src="assets\images\linux.png">
+                <text class="skill-text">Linux</text>
+              </div>
+
+            </div>
 
           </ul>
 
@@ -701,11 +620,9 @@
 
 
 
-      <!--
-        - #PORTFOLIO
-      -->
+      <!--- #PORTFOLIO ----------------------------------------------------------------->
 
-      <article class="portfolio" data-page="portfolio">
+      <article id="portfolio" class="portfolio" data-page="portfolio">
 
         <header>
           <h2 class="h2 article-title">Portfolio</h2>
@@ -720,15 +637,11 @@
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Web design</button>
+              <button data-filter-btn>Apps</button>
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Applications</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
+              <button data-filter-btn>Websites</button>
             </li>
 
           </ul>
@@ -752,15 +665,11 @@
               </li>
 
               <li class="select-item">
-                <button data-select-item>Web design</button>
+                <button data-select-item>Apps</button>
               </li>
 
               <li class="select-item">
-                <button data-select-item>Applications</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web development</button>
+                <button data-select-item>Websites</button>
               </li>
 
             </ul>
@@ -769,164 +678,231 @@
 
           <ul class="project-list">
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
+            <!-- Project Modals -->
+            <div class="project-modal-container" id="addulting">
+              <div class="project-modal-content">
+                <h3 class="h3">ADDulting</h3>
+                <img src="./assets/images/addulting.png" class="project-modal-img" loading="lazy" width="350" height="350" style="border-radius: 10px">
+
+                <br> </br>
+
+                <h5 class="h5">Background Information</h5>
+                <p class="timeline-text">
+                  This project was for the 2021 Knight Hacks Hackathon. My team and I had 48 hours to create and submit
+                  software project. We decided to develop a studying website for individuals who have ADD/ADHD. The study
+                  website would implement a pomodoro timer where it allowed continuous studying for 10-25 minutes with a 
+                  5 minute break it between. We won 1st place for the Beginner Friendly Track.
+                </p>
+
+                <br> </br>
+
+                <h5 class="h5">Building Process</h5>
+                <p class="timeline-text">
+                  We created a mock design on what we wanted the app to look like on figma. We utilized React to develop the 
+                  timer and implemented a Spotify plug in to play music from the website.
+                </p>
+
+                <br> </br>
+
+                <h5 class="h5">Hackathon Presentation</h5>
+                <a href="https://devpost.com/software/addulting">Click Here!</a>
+
+                <h5 class="h5">Link to Website</h5>
+                <a href="https://thirsty-kowalevski-50f9c3.netlify.app">Click Here!</a>
+
+                <br> </br>
+
+                <button class="h5" id="closeModalButton">Close</button>
+              </div>
+            </div>
+
+            <div class="project-modal-container" id="muhass">
+              <div class="project-modal-content">
+                <h3 class="h3">Multimodal Human and Ambience Sensing System</h3>
+                <p class="timeline-text">  </p>
+                
+                <img src="./assets/images/muhass.png" class="project-modal-img" loading="lazy" width="350" height="350" style="border-radius: 10px">
+
+                <br> </br>
+                
+                <h5 class="h5">Background Information</h5>
+                <p class="timeline-text">
+                  This project was created for WEAR Lab at UCF. The project was essentially replicating a smart 
+                  watch and developing an app to pair with the watch. The app would connect to the watch via 
+                  bluetooth and communicate the data collected from the sensors of the watch. This app would also
+                  be considered as our framework app where its contents could be replicated to create other
+                  modified versions of the app but for different devices within the lab
+                </p>
+
+                <br> </br>
+
+                <h5 class="h5">Building Process</h5>
+                <p class="timeline-text">
+                  Bluetooth Low Energy was used to connect the device to the app. A server, which utilized various APIs 
+                  such as Bleak and FASTAPI, was created to host the connection, monitor connection status, and process data 
+                  between the watch and app. MongoDB was used to set up the database to store user data.
+                </p>
+
+                <br> </br>
+
+                <h5 class="h5">App Demo Video</h5>
+                <video width="675px" height="500px" controls="controls">
+                <source src="assets\videos\muhass-demo.MP4" type="video/mp4" />
+
+                <br> </br>
+
+                <button class="h5" id="closeModalButton">Close</button>
+              </div>
+            </div>
+
+            <div class="project-modal-container" id="m2s">
+              <div class="project-modal-content">
+                <h3 class="h3">Motion 2 Sound</h3> 
+
+                <img src="./assets/images/m2s.png" class="project-modal-img" loading="lazy" width="350" height="350" style="border-radius: 10px">
+
+                <br> </br>
+                
+                <h5 class="h5">Background Information</h5>
+                <p class="timeline-text">
+                  This project was created for WEAR Lab at UCF. The purpose of this project was communicating words to medical providers
+                  through sign language. An armband device would collect the gesture from the pateint and send the motion data to a 
+                  machine learning model called Long and Short Term Memory (LSTM). The model would process the data and translate it into one of
+                  the 30 gestures available. The model would then send the word to the app to be displayed to the user.
+                </p>
+
+                <br> </br>
+
+                <h5 class="h5">Building Process</h5>
+                <p class="timeline-text">
+                  This app was also built along the framework of MuHASS so it utilizes the same features including Bluetooth Low Energy and 
+                  a MongoDB database. The app had unique features of its. A text-to-speech API would verbalize the word in English and a logs 
+                  functionality would record all the words sent to the app by the LSTM model.
+                </p>
+
+                <br> </br>
+
+                <h5 class="h5">App Demo Video</h5>
+                <video width="675px" height="500px" controls="controls">
+                <source src="assets\videos\m2s-demo.MP4" type="video/mp4" />
+
+                <br> </br>
+
+                <button id="closeModalButton">Close</button>
+              </div>
+            </div>
+
+            <div class="project-modal-container" id="vars">
+              <div class="project-modal-content">
+                <h3 class="h3">Variable Arm Resistance Suit</h3>
+
+                <img src="./assets/images/vars.png" class="project-modal-img" loading="lazy" width="350" height="350" style="border-radius: 10px">
+
+                <br> </br>
+                
+                <h5 class="h5">Background Information</h5>
+                <p class="timeline-text">
+                  This project was created for WEAR Lab at UCF. The goal for this project was replicating a dumbell 
+                  that patients could use to train their arm. This would be utilized for physical therapy training.
+                  The arm has sensors that would send data to an app that would display the infornmation to the user.
+                  The app would include libraries that has training protocols which would be assigned to the patient 
+                  by the medical provider. The protocols would include instructions on how the patient should train
+                  and track the patient's progress.
+                </p>
+
+                <br> </br>
+
+                <h5 class="h5">Building Process</h5>
+                <p class="timeline-text">
+                  The MuHASS framework was utilized to quickly build the foundation of the app. It share similar qualities
+                  to MuHASS such as Bluetooth Low Energy Connection and a MongoDB database.
+                </p>
+
+                <br> </br>
+
+                <h5 class="h5">App Demo Video</h5>
+                <p class="timeline-text">
+                  Currently in progress! Will be updated as soon as possible!
+                </p>
+
+                <br> </br>
+
+                <button class="h5" id="closeModalButton">Close</button>
+              </div>
+            </div>
+
+            <!-- Project Tiles -->
+            <li class="project-item  active" data-filter-item data-category="websites" data-project-id="addulting">
+              
+              <a id="openModalButton">
+
+                <figure class="project-img">
+
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/addulting.png" alt="finance" loading="lazy">
+                
+                </figure>
+
+                <h3 class="project-title">ADDulting</h3>
+                <p class="project-category">Website</p>
+
+              </a>
+
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="apps" data-project-id="muhass">
+              <a id="openModalButton">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                  <img src="./assets/images/muhass.png" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Finance</h3>
+                <h3 class="project-title">MuHASS</h3>
 
-                <p class="project-category">Web development</p>
+                <p class="project-category">App</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
+            <li class="project-item  active" data-filter-item data-category="apps" data-project-id="m2s">
+              <a id="openModalButton">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                  <img src="./assets/images/m2s.png" alt="task manager" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Orizon</h3>
+                <h3 class="project-title">M2S</h3>
 
-                <p class="project-category">Web development</p>
+                <p class="project-category">App</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
+            <li class="project-item  active" data-filter-item data-category="apps" data-project-id="vars">
+              <a id="openModalButton">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                  <img src="./assets/images/vars.png" alt="task manager" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Fundo</h3>
+                <h3 class="project-title">VARS</h3>
 
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Brawlhalla</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
-                </figure>
-
-                <h3 class="project-title">DSM.</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">MetaSpark</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Summary</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Task Manager</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Arrival</h3>
-
-                <p class="project-category">Web development</p>
+                <p class="project-category">App</p>
 
               </a>
             </li>
@@ -938,206 +914,9 @@
       </article>
 
 
+      <!--- #CONTACT ------------------------------------------------------------------------------------------------------------------------------->
 
-
-
-      <!--
-        - #BLOG
-      -->
-
-      <article class="blog" data-page="blog">
-
-        <header>
-          <h2 class="h2 article-title">Blog</h2>
-        </header>
-
-        <section class="blog-posts">
-
-          <ul class="blog-posts-list">
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
-
-                  <p class="blog-text">
-                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
-
-                  <p class="blog-text">
-                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #80</h3>
-
-                  <p class="blog-text">
-                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
-
-                  <p class="blog-text">
-                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
-
-                  <p class="blog-text">
-                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #79</h3>
-
-                  <p class="blog-text">
-                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #CONTACT
-      -->
-
-      <article class="contact" data-page="contact">
+      <article id="contact" class="contact" data-page="contact">
 
         <header>
           <h2 class="h2 article-title">Contact</h2>
@@ -1145,15 +924,14 @@
 
         <section class="mapbox" data-mapbox>
           <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
-              width="400" height="300" loading="lazy"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224444.54325527028!2d-81.34266519999998!3d28.4811732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e773d8fecdbc77%3A0xac3b2063ca5bf9e!2sOrlando%2C%20FL!5e0!3m2!1sen!2sus!4v1690476577354!5m2!1sen!2sus" 
+              width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </figure>
         </section>
 
         <section class="contact-form">
 
-          <h3 class="h3 form-title">Contact Form</h3>
+          <h3 class="h3 form-title">Send Me a Message!</h3>
 
           <form action="#" class="form" data-form>
 
@@ -1180,11 +958,7 @@
 
   </main>
 
-
-
-
-
-
+  
   <!--
     - custom js link
   -->
