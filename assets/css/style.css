@@ -865,7 +865,7 @@ main {
 .skill-button {
   border-radius: 10px;
   background-color: rgb(255, 255, 255, .9);
-  width: fit-content;
+  width: max-content;
   height: 60px;
   margin: 5px;
 
@@ -875,7 +875,7 @@ main {
 }
 
 .skill-img {
-  width: fit-content;
+  width:min-content;
   height: 40px;
   margin-right: 10px;
 }
